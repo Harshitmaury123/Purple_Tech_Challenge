@@ -1,0 +1,3 @@
+ultralytics==8.1.0
+opencv-python-headless==4.9.0.80 
+# Note: Using headless is a pro-move for Docker so it doesn't look for GUI libraries later!
