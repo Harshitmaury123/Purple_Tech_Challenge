@@ -14,7 +14,7 @@ This project is fully containerized. To launch the Intelligence API and its depe
 
 ```bash
 # 1. Clone the repository
-git clone 
+git clone https://github.com/Harshitmaury123/Purple_Tech_Challenge
 cd store-intelligence
 
 # 2. Start the API
