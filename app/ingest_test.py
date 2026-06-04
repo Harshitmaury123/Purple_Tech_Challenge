@@ -2,7 +2,10 @@ import json
 import requests
 import time
 
-API_URL = "http://127.0.0.1:8000/events/ingest"
+import os
+port = os.environ.get("PORT", 8000)
+API_URL = f"http://127.0.0.1:{port}/events/ingest"
+
 JSONL_FILE = "../data/generated_events.jsonl"
 BATCH_SIZE = 100
 
