@@ -14,7 +14,7 @@ pos_transactions = {}  # Groups POS data by store_id
 def load_pos_data():
     """Loads POS data from the raw CSV into memory on startup."""
     # Ensure you place the uploaded CSV in your data folder!
-    pos_file = "../data/pos_transactions.csv"
+    pos_file = "../data/Brigade_Bangalore_10_April_26 (1)bc6219c.csv"
     
     if not os.path.exists(pos_file):
         print(f"Warning: POS file {pos_file} not found. Skipping POS ingestion.")
