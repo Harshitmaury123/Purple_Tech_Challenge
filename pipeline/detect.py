@@ -19,7 +19,7 @@ def run_pipeline(video_path, store_id, layout_path, output_jsonl):
     
     # We need a base timestamp to simulate real-world time. 
     # In production, this comes from the camera's RTSP stream metadata.
-    base_time = datetime.fromisoformat("2026-03-03T14:00:00") 
+    base_time = datetime.fromisoformat("2026-04-10T12:16:00Z") 
     
     frame_count = 0
     total_events_emitted = 0
@@ -80,7 +80,7 @@ def run_pipeline(video_path, store_id, layout_path, output_jsonl):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Store Intelligence Vision Pipeline")
     parser.add_argument("--video", type=str, required=True, help="Path to raw CCTV mp4")
-    parser.add_argument("--store", type=str, default="STORE_BLR_002", help="Store ID")
+    parser.add_argument("--store", type=str, default="ST1008", help="Store ID")
     parser.add_argument("--layout", type=str, default="../data/store_layout.json", help="Path to layout JSON")
     parser.add_argument("--output", type=str, default="../data/generated_events.jsonl", help="Output JSONL file")
     
