@@ -6,7 +6,7 @@ import pandas as pd
 st.set_page_config(page_title="Store Intelligence Dashboard", layout="wide")
 st.title("🛍️ Apex Retail: Live Store Intelligence")
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://store-intelligence-api.onrender.com" # Replace with your actual Render link
 STORE_ID = "ST1008"
 
 st.sidebar.header("Controls")
